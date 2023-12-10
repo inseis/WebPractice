@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>To Infinity and Beyond</title>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="container">
+      <div id="area-a">
+        <div id="welcome">
+          <div class="welcome-box">
+            <form id="login-form" class="hidden">
+              <div style="font-weight: bold; font-size: 25px;">Log In</div>
+              <input type="text" class="input" placeholder="당신의 이름이 궁금해요!" maxlength="15" required />
+            </form>
+            <h3 id="greeting" class="hidden"></h3>
+          </div>
+        </div>
+        <div id="weather">
+          <div style="font-weight: bold; font-size: 25px;">TODAY'S WEATHER</div>
+          <div class="weather-box">
+            <div></div>
+            <div class="temp"></div>
+            <div></div>
+          </div>
+        </div>
+        <div id="video">
+          <iframe src="https://www.youtube.com/embed/HGl75kurxok?si=CzlYDhS3cCBxsKP-" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+      <div id="todo">
+        <div style="font-weight: bold; font-size: 25px;">TODO LIST</div>
+        <form id="todo-form">
+          <input type="text" class="input" placeholder="오늘 계획을 세워볼까요?" required/>
+        </form>
+        <ul id="todo-list"></ul>
+      </div>
+      <div id="area-b">
+        <div id="time">
+          <div class="time-box">
+            <h2 id="date"></h2>
+            <h2 id="clock"></h2>
+          </div>
+        </div>
+        <div id="d-day">
+          <div style="font-weight: bold; font-size: 25px;">D-DAY</div>
+          <div class="d-day-box">
+            <div style="font-weight: bold; font-size: 18px;">Gotcha Day🦴</div>
+            <div class="ddate1"></div>
+          </div>
+          <div class="d-day-box">
+            <div style="font-weight: bold; font-size: 18px;">Christmas🎄</div>
+            <div class="ddate2"></div>
+          </div>
+          <div class="d-day-box">
+            <div style="font-weight: bold; font-size: 18px;">My Birthday🎉</div>
+            <div class="ddate3"></div>
+          </div>
+          <div class="d-day-box">
+            <div style="font-weight: bold; font-size: 18px;">Movie night🎥</div>
+            <div class="ddate4"></div>
+          </div>
+        </div>
+      </div>
+      <div id="quote">
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </div>
+
+  <script src="./js/greeting.js"></script>
+  <script src="./js/clock.js"></script>
+  <script src="./js/quotes.js"></script>
+  <script src="./js/background.js"></script>
+  <script src="./js/todo.js"></script>
+  <script src="./js/weather.js"></script>
+  <script src="./js/dDay.js"></script>
+  <script src="api.js"></script>
+
+</body>
+</html>

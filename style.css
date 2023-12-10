@@ -1,0 +1,197 @@
+@font-face {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv1 Gothic OTF.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'NEXON Lv1 Gothic OTF';
+  margin: 0;
+}
+
+.hidden {
+  display: none;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.container {
+  display: grid;
+  grid-template-areas:
+		"   a    main    b   "
+    "   a    main    b   "
+    "   a    main    b   "
+		"footer footer footer";
+    width: 90%;
+    justify-content: space-evenly;
+}
+
+#area-a {
+  grid-area: a;
+  display: flex;
+  flex-direction: column;
+}
+
+#area-b {
+  grid-area: b;
+  display: flex;
+  flex-direction: column;
+}
+
+.container #welcome, #time, #video, #todo, #weather, #d-day, #quote {
+  border-radius: 10px;
+  background-color: white;
+  opacity: 80%;
+  margin: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+.container #welcome {
+  width: 300px;
+  height: 112px;
+  display: flex;
+  margin-right: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#welcome input, div {
+  margin: 8px 0;
+}
+
+#weather {
+  width: 300px;
+  margin-right: 0;
+}
+
+#weather .weather-box {
+  margin-top: 20px;
+}
+
+.weather-box div {
+  font-weight: bold;
+  margin: 15px 0;
+}
+
+.weather-box .temp {
+  font-size: 25px;
+}
+
+#video {
+  width: 300px;
+  margin-right: 0;
+  position: relative;
+}
+
+#video iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+#todo {
+  grid-area: main;
+  width: 500px;
+  height: 520px;
+  margin-right: 0;
+  margin-left: 0;
+  overflow: auto;
+}
+
+#todo div, #todo-form {
+  margin: 15px 0;
+}
+
+#todo ul {
+  margin-top: 50px;
+}
+
+#todo ul li{
+  margin: 15px 0;
+}
+
+li span {
+  margin: 0 8px;
+  font-weight: bold;
+}
+
+li span:last-child {
+  cursor: pointer;
+}
+
+.input {
+  width: 230px;
+  height: 32px;
+  font-size: 15px;
+  border: 0;
+  border-radius: 15px;
+  outline: none;
+  padding-left: 10px;
+  background-color: rgb(233, 233, 233);
+}
+
+#todo-form .input {
+  width: 400px;
+}
+
+#time {
+  width: 300px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#d-day {
+  width: 300px;
+  height: 342px;
+  margin-left: 0;
+}
+
+#d-day .ddate1, .ddate2, .ddate3, .ddate4 {
+  font-weight: bold;
+}
+
+#d-day .d-day-box {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+#quote {
+  grid-area: footer;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#quote span {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+#quote span:first-child {
+  font-size: 20px;
+}
+
+img {
+  position:absolute;
+  width:100%;
+  height:100%;
+  left: 0px;
+  top: 0px;
+  right:0px;
+  bottom:0px;
+  z-index: -1;
+  }
